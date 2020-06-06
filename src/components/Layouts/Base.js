@@ -18,7 +18,7 @@ const BaseLayout = ({ children }) => {
   `)
 
   return (
-    <div className="max-w-screen-md mx-auto px-6">
+    <div className="max-w-screen-md mx-auto px-6 font-body">
       <div className="py-8 lg:py-12 flex items-center">
         <Link to="/" className="mr-10">
           <Logo />
@@ -43,7 +43,7 @@ const BaseLayout = ({ children }) => {
           About
         </Link>
       </div>
-      <main>{children}</main>
+      <main className="text-gray-600">{children}</main>
     </div>
   )
 }
