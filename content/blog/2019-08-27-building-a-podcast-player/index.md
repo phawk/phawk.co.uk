@@ -40,7 +40,7 @@ I don't want anybody vaguely interested signing up and then never using the prod
 
 if you want to be a part of building a great desktop podcast player you can sign up for the early access program below and get access to Altcast as soon as it's ready for £5.99. You will get access to the app throughout the private period and 6 months of access when it launches.
 
-[Join the early access program](https://payhere.co/phawk/altcast-early-access)
+[Join the early access program](https://app.payhere.co/phawk/altcast-early-access)
 
 Payments are taken using our other product Payhere – [find out more about it](https://payhere.co/blog/why-we-built-payhere).
 

@@ -1,0 +1,6 @@
+.link {
+  @apply text-teal-500 underline;
+  &:hover {
+    @apply text-teal-600;
+  }
+}

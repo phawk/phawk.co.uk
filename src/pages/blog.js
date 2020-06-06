@@ -3,6 +3,8 @@ import { Link, graphql } from "gatsby"
 
 import Layout from "../components/Layouts/Base"
 import SEO from "../components/seo"
+import List from "../components/Blog/List"
+import PageTitle from "../components/PageTitle"
 
 const BlogIndex = ({ data }) => {
   const posts = data.allMarkdownRemark.edges
@@ -10,26 +12,20 @@ const BlogIndex = ({ data }) => {
   return (
     <Layout>
       <SEO title="Blog" />
-      {posts.map(({ node }) => {
-        const title = node.frontmatter.title || node.fields.slug
-        return (
-          <article key={node.fields.slug}>
-            <header>
-              <h3>
-                <Link to={node.fields.slug}>{title}</Link>
-              </h3>
-              <small>{node.frontmatter.date}</small>
-            </header>
-            <section>
-              <p
-                dangerouslySetInnerHTML={{
-                  __html: node.frontmatter.description || node.excerpt,
-                }}
-              />
-            </section>
-          </article>
-        )
-      })}
+      <PageTitle>Jamstack with Gatsby + React.</PageTitle>
+      <p className="text-xl">
+        The modern developer assembles the best headless APIs and brings them
+        togehther on the frontend. I’m a fan of the new era of static sites and
+        I like to write about my experiences building websites and digital
+        products.
+      </p>
+
+      <List posts={posts} className="mt-10" />
+      <div>
+        <Link className="link" to="/blog/archive/">
+          View full archive
+        </Link>
+      </div>
     </Layout>
   )
 }

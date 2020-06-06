@@ -43,7 +43,7 @@ const BaseLayout = ({ children }) => {
           About
         </Link>
       </div>
-      <main className="text-gray-600">{children}</main>
+      <main className="text-gray-700 text-lg pb-16">{children}</main>
     </div>
   )
 }

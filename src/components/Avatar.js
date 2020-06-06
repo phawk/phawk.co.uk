@@ -7,8 +7,8 @@ const Avatar = ({ className }) => {
     query AvatarQuery {
       avatar: file(absolutePath: { regex: "/ignite-1600.jpg/" }) {
         childImageSharp {
-          fixed(width: 80, height: 80) {
-            ...GatsbyImageSharpFixed
+          fluid(maxWidth: 96) {
+            ...GatsbyImageSharpFluid
           }
         }
       }
@@ -17,7 +17,7 @@ const Avatar = ({ className }) => {
 
   return (
     <Img
-      fixed={data.avatar.childImageSharp.fixed}
+      fluid={data.avatar.childImageSharp.fluid}
       className={`rounded-full ${className}`}
     />
   )

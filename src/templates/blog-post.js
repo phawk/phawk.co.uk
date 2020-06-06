@@ -3,6 +3,25 @@ import { Link, graphql } from "gatsby"
 
 import Layout from "../components/Layouts/Base"
 import SEO from "../components/seo"
+import PageTitle from "../components/PageTitle"
+import Avatar from "../components/Avatar"
+
+export const pageQuery = graphql`
+  query BlogPostBySlug($slug: String!) {
+    markdownRemark(fields: { slug: { eq: $slug } }) {
+      id
+      excerpt(pruneLength: 160)
+      html
+      frontmatter {
+        title
+        date(formatString: "MMM Do, YYYY")
+        description
+        img
+        caption
+      }
+    }
+  }
+`
 
 const BlogPostTemplate = ({ data, pageContext }) => {
   const post = data.markdownRemark
@@ -15,9 +34,12 @@ const BlogPostTemplate = ({ data, pageContext }) => {
         description={post.frontmatter.description || post.excerpt}
       />
       <article>
-        <header>
-          <h1>{post.frontmatter.title}</h1>
-          <p>{post.frontmatter.date}</p>
+        <header className="mb-10 lg:mb-16">
+          <PageTitle>{post.frontmatter.title}</PageTitle>
+          <div className="flex items-center">
+            <Avatar className="h-10 w-10 mr-4" />
+            <span>Pete posted on {post.frontmatter.date}</span>
+          </div>
         </header>
         {post.frontmatter.img && (
           <figure>
@@ -30,22 +52,24 @@ const BlogPostTemplate = ({ data, pageContext }) => {
             )}
           </figure>
         )}
-        <section dangerouslySetInnerHTML={{ __html: post.html }} />
-        <hr />
+        <section
+          className="styled-text"
+          dangerouslySetInnerHTML={{ __html: post.html }}
+        />
       </article>
 
-      <nav>
-        <ul>
+      <nav className="mt-10 lg:mt-16">
+        <ul className="sm:grid sm:grid-cols-2">
           <li>
             {previous && (
-              <Link to={previous.fields.slug} rel="prev">
+              <Link to={previous.fields.slug} rel="prev" className="link">
                 ← {previous.frontmatter.title}
               </Link>
             )}
           </li>
-          <li>
+          <li className="text-right">
             {next && (
-              <Link to={next.fields.slug} rel="next">
+              <Link to={next.fields.slug} rel="next" className="link">
                 {next.frontmatter.title} →
               </Link>
             )}
@@ -57,20 +81,3 @@ const BlogPostTemplate = ({ data, pageContext }) => {
 }
 
 export default BlogPostTemplate
-
-export const pageQuery = graphql`
-  query BlogPostBySlug($slug: String!) {
-    markdownRemark(fields: { slug: { eq: $slug } }) {
-      id
-      excerpt(pruneLength: 160)
-      html
-      frontmatter {
-        title
-        date(formatString: "MMMM DD, YYYY")
-        description
-        img
-        caption
-      }
-    }
-  }
-`

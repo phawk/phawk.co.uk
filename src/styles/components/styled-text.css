@@ -1,0 +1,38 @@
+.styled-text {
+  hr {
+    @apply my-8;
+  }
+
+  p {
+    @apply mb-4 leading-relaxed;
+    @media screen and (min-width: 768px) {
+      @apply text-xl;
+    }
+  }
+
+  a {
+    @apply text-teal-500 underline;
+    &:hover {
+      @apply text-teal-600;
+    }
+  }
+
+
+  h2 {
+    @apply mt-10 mb-6 text-teal-500 font-medium text-2xl;
+    @media screen and (min-width: 1024px) {
+      @apply text-3xl;
+    }
+  }
+
+  h3 {
+    @apply mt-6 mb-1 text-gray-800 font-semibold text-xl;
+    @media screen and (min-width: 1024px) {
+      @apply text-2xl;
+    }
+  }
+
+  h4 {
+    @apply text-gray-800 font-semibold;
+  }
+}

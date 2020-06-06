@@ -5,3 +5,5 @@
  */
 
 import "typeface-ibm-plex-sans"
+import "prism-themes/themes/prism-nord.css"
+import "prismjs/plugins/line-numbers/prism-line-numbers.css"

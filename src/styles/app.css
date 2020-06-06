@@ -2,4 +2,8 @@
 
 @import "tailwindcss/components";
 
+@import "components/link.css";
+@import "components/styled-text.css";
+@import "components/gatsby-highlight.css";
+
 @import "tailwindcss/utilities";
