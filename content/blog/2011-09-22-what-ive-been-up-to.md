@@ -3,6 +3,7 @@ layout: post
 title: What I’ve been up to
 tags: Misc
 date: "2011-09-22T22:00:00.000Z"
+archived: true
 ---
 
 I haven't posted anything here lately, despite me looking at a lot of cool stuff. So I guess this post is a small catchup of some of the cool things I've been learning and coding up.

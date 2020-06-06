@@ -4,6 +4,7 @@ title: 'Laravel 4 nginx config'
 tags: PHP
 category_id: devops
 date: "2014-02-15T22:00:00.000Z"
+archived: true
 ---
 
 I’ve seen a lot of complicated nginx setups for laravel and other major PHP frameworks.

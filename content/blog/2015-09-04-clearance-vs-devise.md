@@ -4,6 +4,7 @@ title: Clearance vs. Devise
 tags: Rails
 category_id: clean_code
 date: "2015-09-04T22:00:00.000Z"
+archived: true
 ---
 
 Thoughtbots [clearance](https://github.com/thoughtbot/clearance) gem is an alternative to the more popular [Devise](https://github.com/plataformatec/devise) gem that allows you to easily add authentication to a Rails app.

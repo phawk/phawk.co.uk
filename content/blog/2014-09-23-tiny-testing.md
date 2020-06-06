@@ -4,6 +4,7 @@ title: 'Tiny testing'
 tags: Ruby, Testing
 category_id: testing
 date: "2014-09-23T22:00:00.000Z"
+archived: true
 ---
 
 I recently started getting a lot of spam enquiries through my [portfolio site](http://phawk.co.uk). This began to annoy me after several days of junk emails and I planned to do something about it.

@@ -3,6 +3,7 @@ layout: post
 title: PostgreSQL UUID primary keys in Rails 5
 tags: PostgreSQL, Rails, Ruby
 date: "2017-02-22T22:00:00.000Z"
+archived: true
 ---
 
 In a recent project I have been using UUIDs as the primary key type with Rails 5 and PostgreSQL. This can be useful if your objects IDs are publicly exposed and you want to disguise the fact that they are a sequence, or how early on in the sequence they might be ;-)

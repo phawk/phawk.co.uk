@@ -4,6 +4,7 @@ title: Going forward, plans for 2013
 tags: Misc
 date: "2012-12-31T22:00:00.000Z"
 description: So I have reviewed my progress for 2012, the first thing I have failed at is setting valuable goals. The biggest thing I took away from 2011 was focus, so it made made sense to me to set goals to focus on, however the taking away from 2012 would have to be value.
+archived: true
 ---
 
 So I have [reviewed my progress for 2012](/blog/wrapping-up-2012), the first thing I have failed at is setting valuable goals. The biggest thing I took away from 2011 was **focus**, so it made made sense to me to set goals to focus on, however the taking away from 2012 would have to be **value**. Value is a difficult thing to set your head around at first, but I have found reading up on [lean production](http://en.wikipedia.org/wiki/Lean_production) and [lean software development](http://en.wikipedia.org/wiki/Lean_software_development) to help a lot.

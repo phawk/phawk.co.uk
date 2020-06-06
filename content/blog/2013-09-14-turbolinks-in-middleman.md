@@ -4,6 +4,7 @@ title: 'Turbolinks in middleman'
 tags: Ruby, Middleman
 date: "2013-09-14T22:00:00.000Z"
 ---
+
 Rails 4 now comes with [Turbolinks](http://github.com/rails/turbolinks) enabled by default, I think this is great and would love to see more sites make use of this technology if it&#8217;s feasable.
 
 Turbolinks might not be so easy to setup or might not even make sense at all for sites that rely on a large amount of JavaScript interaction, especially if they are not making use of event delegation. However, this site has been running off static content for a long time now, first [jekyll](/blog/jekyll/) and now [middleman](http://middlemanapp.com/), it&#8217;s a perfect candidate for turbolinks as there is no complex JavaScript running. This will save the browser fetching and parsing both the CSS and the web fonts for each internal link the user clicks, leaving everything nice and snappy.

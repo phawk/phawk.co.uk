@@ -3,6 +3,7 @@ layout: post
 title: A robot for music
 tags: node
 date: "2015-10-19T22:00:00.000Z"
+archived: true
 ---
 
 Having chat controlled music for the office is certainly [not a new idea](http://zachholman.com/screencast/play/), however I was a little disappointed when trying to set it up. [GitHubs play](https://github.com/play/play) hasn’t been used by the company or updated in years and has little hope of running on an up to date version of OS X.

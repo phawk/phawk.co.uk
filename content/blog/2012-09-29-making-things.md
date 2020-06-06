@@ -3,6 +3,7 @@ layout: post
 title: Making things
 tags: Web Apps
 date: "2012-09-29T22:00:00.000Z"
+archived: true
 ---
 
 If I were to put a label on myself within the category of engineer, that would be "technologist". I love researching and playing with the latest technologies, one of the downsides to this is that I don't get much live. I put a lot of time into learning and staying up to date, but if I were to list the products I have made lately, they could be counted on one hand.

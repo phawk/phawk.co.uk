@@ -3,6 +3,7 @@ layout: post
 title: 'Lean JavaScript templates in Rails'
 tags: Rails, JavaScript
 date: "2016-10-21T22:00:00.000Z"
+archived: true
 ---
 
 A little known Rails feature is built-in JST support and we can leverage this along with [EJS](http://www.embeddedjs.com/) to have a neat and tidy JS templating solution.

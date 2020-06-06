@@ -4,6 +4,7 @@ title: 'Auto renewing SSL certs for free'
 category_id: devops
 tags: Server, SSL
 date: "2017-02-24T22:00:00.000Z"
+archived: true
 ---
 
 I’m mainly writing this post for my own reference, I’m assuming most people have heard of letsencrypt.org and their free tool [certbot](https://certbot.eff.org/) for creating and automating SSL certification requests and renewals. I used to use [startssl](https://www.startssl.com/)’s free service but it was a lot of hassle.

@@ -3,6 +3,7 @@ layout: post
 title: 'Better Rails logging'
 tags: Ruby, Rails
 date: "2014-10-13T22:00:00.000Z"
+archived: true
 ---
 
 When insignificant messages are clogging up your application logs it can be very difficult and time consuming to debug errors happening in production.

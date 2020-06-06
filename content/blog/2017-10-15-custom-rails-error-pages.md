@@ -4,6 +4,7 @@ title: 'Custom Rails error pages'
 category_id: building_void
 tags: Rails
 date: "2017-10-15T22:00:00.000Z"
+archived: true
 ---
 
 This is the start of an ongoing series extracted from building [Void](/apps) – a bookmarking and reading list tool. Void is one of my side projects which I’m going to start writing about, sharing my experiences building and hopefully launching soon! I’ll write more about the what and why of Void in a later post.

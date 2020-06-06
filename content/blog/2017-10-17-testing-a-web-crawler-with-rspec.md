@@ -4,6 +4,7 @@ title: 'Real code: Testing a web crawler with RSpec'
 category_id: building_void
 tags: Ruby, Testing
 date: "2017-10-17T22:00:00.000Z"
+archived: true
 ---
 
 This is another post coming out of working on my [side project Void](/apps). You often see articles teaching testing or TDD on an example topic (I’ve written [many](/blog/tiny-testing/) [in](/blog/testing-sinatra-apis/) [the](/blog/testing-node-apps-with-mocha/) [past](/blog/testing-backbone-with-mocha/)), so I thought it was time to start writing about real world testing, with real code.

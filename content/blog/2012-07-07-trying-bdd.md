@@ -4,6 +4,7 @@ title: Trying BDD
 tags: Testing
 category_id: testing
 date: "2012-07-07T22:00:00.000Z"
+archived: true
 ---
 
 When I started out as a developer and to this day I am always seeking ways to improve my workflow and the quality of the code I write.

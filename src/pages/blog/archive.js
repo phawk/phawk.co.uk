@@ -1,11 +1,10 @@
 import React from "react"
 import { Link, graphql } from "gatsby"
 
-import Layout from "../components/Layouts/Base"
-import SEO from "../components/seo"
-import Pagination from "../components/Pagination"
+import Layout from "../../components/Layouts/Base"
+import SEO from "../../components/seo"
 
-const BlogIndex = ({ data, pageContext: { currentPage, numPages } }) => {
+const BlogArchive = ({ data }) => {
   const posts = data.allMarkdownRemark.edges
 
   return (
@@ -31,20 +30,14 @@ const BlogIndex = ({ data, pageContext: { currentPage, numPages } }) => {
           </article>
         )
       })}
-
-      <Pagination
-        totalPages={numPages}
-        currentPage={currentPage}
-        pagePath={page => (page > 1 ? `/p/${page}` : `/`)}
-      />
     </Layout>
   )
 }
 
-export default BlogIndex
+export default BlogArchive
 
 export const pageQuery = graphql`
-  query blogListQuery($skip: Int!, $limit: Int!) {
+  query blogListArchiveQuery {
     site {
       siteMetadata {
         title
@@ -52,9 +45,7 @@ export const pageQuery = graphql`
     }
     allMarkdownRemark(
       sort: { fields: [frontmatter___date], order: DESC }
-      filter: { frontmatter: { draft: { ne: true } } }
-      limit: $limit
-      skip: $skip
+      filter: { frontmatter: { draft: { ne: true }, archived: { eq: true } } }
     ) {
       edges {
         node {

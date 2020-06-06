@@ -4,6 +4,7 @@ title: 'Production Rails apps'
 tags: Ruby, Rails
 category_id: devops
 date: "2014-12-19T22:00:00.000Z"
+archived: true
 ---
 
 This isn’t a **go-live** checklist, just a couple of things that aren’t too difficult to setup and will give you a bit more peace of mind when you deploy your app to the big bad world.

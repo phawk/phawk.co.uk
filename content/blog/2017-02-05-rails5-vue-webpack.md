@@ -4,6 +4,7 @@ title: 'Using Vue.js + webpack with Rails 5 today'
 tags: Vue, Rails, JavaScript
 published: false
 date: "2017-02-05T22:00:00.000Z"
+archived: true
 ---
 
 With Rails 5.1 we’re going to get built in support for using webpack for our javascript, allowing us to use more advanced frontend tools and frameworks. The rails/webpacker gem is already out there and with a bit of reading, trial & error I’ve got it working with rails 5.0.

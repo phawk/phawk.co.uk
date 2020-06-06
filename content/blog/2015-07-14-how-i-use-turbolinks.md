@@ -3,6 +3,7 @@ layout: post
 title: How I use Turbolinks
 tags: Ruby, Rails, JavaScript
 date: "2015-07-14T22:00:00.000Z"
+archived: true
 ---
 
 For many traditional multi-page apps [turbolinks](https://github.com/rails/turbolinks) can offer a great perceived performance boost to your end users, however it can be tricky to get running if you’re not well practiced in JavaScript.

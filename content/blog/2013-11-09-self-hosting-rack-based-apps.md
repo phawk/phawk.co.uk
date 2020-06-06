@@ -4,6 +4,7 @@ title: 'Self hosting Rack based apps'
 tags: Operations, Ruby
 category_id: devops
 date: "2013-11-09T22:00:00.000Z"
+archived: true
 ---
 
 I've been self hosting my own rack based applications (rails, sinatra etc) for some time, I want to show you my server setup and how to achieve decent performance out of your applications on a minimal budget.

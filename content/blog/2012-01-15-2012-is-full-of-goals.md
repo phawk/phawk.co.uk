@@ -3,6 +3,7 @@ layout: post
 title: 2012 is full of goals
 tags: Misc
 date: "2012-01-15T22:00:00.000Z"
+archived: true
 ---
 
 As this is the first time setting goals to measure myself against next year, I don't really have anything tangible to measure against from the start of 2011.

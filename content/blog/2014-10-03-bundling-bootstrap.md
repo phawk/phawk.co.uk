@@ -3,6 +3,7 @@ layout: post
 title: 'Bundling bootstrap'
 tags: Ruby, Rails
 date: "2014-10-03T22:00:00.000Z"
+archived: true
 ---
 
 I am growing tired of seeing css or javascript frameworks and libraries being installed with bundler.

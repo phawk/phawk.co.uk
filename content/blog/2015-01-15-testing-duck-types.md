@@ -4,6 +4,7 @@ title: 'Testing duck types'
 tags: Ruby, Testing
 category_id: testing
 date: "2015-01-15T22:00:00.000Z"
+archived: true
 ---
 
 I just finished reading [Practical Object-Oriented Design in Ruby](http://www.poodr.com/) and I wanted to share one of the cool things I got from the last chapter on testing duck types.

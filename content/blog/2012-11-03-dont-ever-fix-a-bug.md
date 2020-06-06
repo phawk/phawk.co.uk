@@ -3,6 +3,7 @@ layout: post
 title: Don't ever fix a bug
 tags: Development
 date: "2012-11-03T22:00:00.000Z"
+archived: true
 ---
 
 We'll start by a basic [definition of a bug](http://en.wikipedia.org/wiki/Software_bug).

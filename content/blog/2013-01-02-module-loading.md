@@ -3,6 +3,7 @@ layout: post
 title: Module loading
 tags: JavaScript
 date: "2013-01-02T22:00:00.000Z"
+archived: true
 ---
 
 So as I mentioned in my goals for 2013 I am working on a JavaScript framework, it has been really interesting so far and I am learning quite a lot from it.

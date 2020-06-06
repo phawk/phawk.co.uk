@@ -5,6 +5,7 @@ tags: Rails, Ruby
 category_id: clean_code
 published: false
 date: "2017-11-13T22:00:00.000Z"
+archived: true
 ---
 
 I recently talked about our [Vanilla Rails](http://pooreffort.com/blog/vanilla-rails/) approach that we use in [Alt Labs](http://alternatelabs.co), in short it’s about minimising your dependencies and sticking to the core Rails framework.

@@ -4,6 +4,7 @@ title: 'Testing sinatra APIs'
 tags: Testing, Ruby
 category_id: testing
 date: "2013-10-07T22:00:00.000Z"
+archived: true
 ---
 
 [Sinatra](http://www.sinatrarb.com/) is often a great choice for writing restful web services. I want to show you what I have found beneficial when testing APIs and how to do it with sinatra and [minitest](http://docs.seattlerb.org/minitest/).

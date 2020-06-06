@@ -3,6 +3,7 @@ layout: post
 title: 'The State of Swift'
 tags: iOS, Swift
 date: "2017-02-14T22:00:00.000Z"
+archived: true
 ---
 
 

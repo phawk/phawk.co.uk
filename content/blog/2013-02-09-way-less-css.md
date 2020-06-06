@@ -4,6 +4,7 @@ title: Way Less CSS
 tags: Web Apps
 category_id: clean_code
 date: "2013-02-09T22:00:00.000Z"
+archived: true
 ---
 
 With the redesign of my blog a few months back I decided I was going to try out this mobile first thing everyone was harping on about.

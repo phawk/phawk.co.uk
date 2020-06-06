@@ -5,6 +5,7 @@ img: /images/photos/harland-and-wolff.jpg
 caption: Harland and Wolff from my balcony
 tags: Photography
 date: "2013-02-10T22:00:00.000Z"
+archived: true
 ---
 
 Picked up a new camera today, a [Sony SLT-A37](http://www.amazon.co.uk/Sony-Translucent-Technology-Interchangeable-18-55mm/dp/B0083RQAYM/ref=sr_1_1?ie=UTF8&qid=1360529554&sr=8-1). I've only taken a few quick shots from the balcony in my apartment, but so far it seems pretty good.

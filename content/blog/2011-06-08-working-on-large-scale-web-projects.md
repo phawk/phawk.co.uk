@@ -3,6 +3,7 @@ layout: post
 title: Working on large scale web projects
 tags: Web Apps
 date: "2011-06-08T22:00:00.000Z"
+archived: true
 ---
 
 As you may or may not know, I work for Crafty Devil, a web applications design company based in Belfast. We have a pet project (turning into a very large one :) ) Planzai. Working on Planzai is one of the most exciting things to do, and here’s why.

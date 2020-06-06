@@ -4,6 +4,7 @@ title: Manage cron jobs with whenever and capistrano
 tags: Rails, Server
 category_id: devops
 date: "2015-11-06T22:00:00.000Z"
+archived: true
 ---
 
 Keeping track of your apps scheduled tasks is usually a bit of a pain. It can be handled outside of your normal code processes such as github and missed in your code reviews.

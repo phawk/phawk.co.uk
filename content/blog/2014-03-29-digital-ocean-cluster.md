@@ -4,6 +4,7 @@ title: 'Digital ocean cluster from $15/mo'
 tags: Operations
 category_id: devops
 date: "2014-03-29T22:00:00.000Z"
+archived: true
 ---
 
 With digital ocean you can get a VPS for $5 / month so why not get a few small VPS’s and start to separate out your server architecture to help with basic horizontal scalability.

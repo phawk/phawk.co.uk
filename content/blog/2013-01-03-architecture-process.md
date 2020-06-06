@@ -4,6 +4,7 @@ title: Architecture process
 tags: Development, JavaScript
 category_id: clean_code
 date: "2013-01-03T22:00:00.000Z"
+archived: true
 ---
 
 I've long wanted to jot down the elements to my architecture process so that I could measure and improve upon it. I think once you have something nailed down as a specific process you can really see where the weaknesses are and make big improvements to your workflow.

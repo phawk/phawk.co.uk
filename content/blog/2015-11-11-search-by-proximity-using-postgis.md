@@ -3,6 +3,7 @@ layout: post
 title: Search by proximity using PostGIS and Rails
 tags: Rails, PostGIS
 date: "2015-11-11T22:00:00.000Z"
+archived: true
 ---
 
 Searching proximity to a location is a task we have done before in a traditional database with some complex trigonometry algorithms. As we’re always seeking to keep our code as clean and efficient as possible we wanted try out [PostGIS](http://postgis.net/), an addon for the open source PostgreSQL database we use on almost every app we’ve built.

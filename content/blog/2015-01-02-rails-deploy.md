@@ -4,6 +4,7 @@ title: 'Rails Deploy'
 tags: Ruby, Rails, Operations
 category_id: devops
 date: "2015-01-02T22:00:00.000Z"
+archived: true
 ---
 
 [Rails deploy](https://github.com/phawk/rails-deploy) is an opinionated set of ansible scripts that take the pain out of setting up and deploying Ruby/Rails applications.
