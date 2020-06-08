@@ -8,7 +8,7 @@ const ProjectsPage = () => (
   <Layout>
     <SEO title="Projects" />
     <PageTitle>Projects</PageTitle>
-    <p className="text-xl">something.</p>
+    <p className="text-xl">Coming soon.</p>
   </Layout>
 )
 
