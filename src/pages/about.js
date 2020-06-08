@@ -1,6 +1,8 @@
 import React from "react"
-import { Link } from "gatsby"
+import { Timeline, TimelineItem } from "vertical-timeline-component-for-react"
 
+import altLogo from "../images/altlabs.svg"
+import payhereLogo from "../images/payhere-icon.svg"
 import Layout from "../components/Layouts/Base"
 import SEO from "../components/seo"
 import PageTitle from "../components/PageTitle"
@@ -19,70 +21,113 @@ const AboutPage = () => (
       well tested APIs and web apps in Ruby, and nowadays, I spend most of my
       time working with React or React Native.
     </p>
-    <h3 className="text-xl mt-8 mb-3 font-semibold text-gray-900">2005</h3>
-    <p className="mb-4">
-      I started my professional career as a UI developer/designer, helping to
-      design, build and ship products and services on the web. Previously I have
-      worked at{" "}
-      <a href="http://typecast.com" className="link">
-        Typecast
-      </a>
-      ,{" "}
-      <a href="http://craftydevil.co.uk" className="link">
-        Crafty Devil
-      </a>{" "}
-      and{" "}
-      <a href="http://propertypal.com" className="link">
-        PropertyPal
-      </a>
-      .
-    </p>
-    <h3 className="text-xl mt-8 mb-3 font-semibold text-gray-900">
-      2014 Alt Labs
-    </h3>
-    <p className="mb-4">
-      I founded{" "}
-      <a href="https://alternatelabs.co" className="link">
-        Alt Labs
-      </a>{" "}
-      in late 2014 – a small software agency that builds ambitious applications
-      on web &amp; mobile. We care deeply about UX, code-quality, and launching{" "}
-      <span role="img" aria-label="Launch">
-        🚀
-      </span>{" "}
-      and can help and guide companies through the entire process.
-    </p>
-    <h3 className="text-xl mt-8 mb-3 font-semibold text-gray-900">
-      2018 Payhere
-    </h3>
-    <p className="mb-4">
-      <a href="https://payhere.co" className="link">
-        Payhere
-      </a>{" "}
-      was born out of Alt Labs from continously building payment integrations
-      and seeking to build a simpler solution. In Jan 2018 we launched with test
-      customers and refined the product, until Jan 2019 joining the{" "}
-      <a href="https://igniteni.com/" className="link">
-        Ignite Propel accelerator
-      </a>{" "}
-      and launching to the public in Feb 2019 gaining over 200 customers in the
-      weeks to follow. Our{" "}
-      <a href="https://www.producthunt.com/posts/payhere" className="link">
-        Product Hunt launch
-      </a>{" "}
-      was awesome and we came in #4 for the day. Scott and I are continuing to
-      build and grow Payhere into a sustainable, profitable business.
-    </p>
 
-    <h3 className="text-xl mt-8 mb-3 font-semibold text-gray-900">
-      2020 Alt is a Product House
-    </h3>
-    <p className="mb-4">
-      In early March we made the decision to stop client projects and focus
-      solely on growing our own digital products. Alt Labs will live on as a
-      product house, essentially a holding company for all the products we
-      launch.
-    </p>
+    <Timeline lineColor={"#edf2f7"}>
+      <TimelineItem
+        key="001"
+        dateComponent={<div className="text-gray-600 ml-10 md:ml-0">2005</div>}
+        style={{ color: "#38b2ac" }}
+      >
+        <p className="mb-4 text-gray-600">
+          I started my professional career as a UI developer/designer, helping
+          to design, build and ship products and services on the web.
+        </p>
+        <p className="mb-4 text-gray-600">
+          I worked for various agencies and startups such as{" "}
+          <a href="http://typecast.com" className="link">
+            Typecast
+          </a>
+          ,{" "}
+          <a href="http://craftydevil.co.uk" className="link">
+            Crafty Devil
+          </a>{" "}
+          and{" "}
+          <a href="http://propertypal.com" className="link">
+            PropertyPal
+          </a>
+          .
+        </p>
+      </TimelineItem>
+
+      <TimelineItem
+        key="002"
+        dateComponent={<div className="text-gray-600 ml-10 md:ml-0">2014</div>}
+        style={{ color: "#38b2ac" }}
+      >
+        <img src={altLogo} alt="Alt Labs" className="w-16 mb-5" />
+        <p className="mb-4 text-gray-600">
+          I founded{" "}
+          <a href="https://alternatelabs.co" className="link">
+            Alt Labs
+          </a>{" "}
+          in late 2014 – a small software agency that builds ambitious
+          applications on web &amp; mobile.
+        </p>
+        <p className="mb-4 text-gray-600">
+          We care deeply about UX, code-quality, and launching{" "}
+          <span role="img" aria-label="Launch">
+            🚀
+          </span>{" "}
+          and can help and guide companies through the entire process.
+        </p>
+      </TimelineItem>
+
+      <TimelineItem
+        key="003"
+        dateComponent={<div className="text-gray-600 ml-10 md:ml-0">2018</div>}
+        style={{ color: "#38b2ac" }}
+      >
+        <img src={payhereLogo} alt="Payhere" className="w-10 mb-5" />
+        <p className="mb-4 text-gray-600">
+          <a href="https://payhere.co" className="link">
+            Payhere
+          </a>{" "}
+          was born out of Alt Labs from continously building payment
+          integrations and seeking to build a simpler solution. In Jan 2018 we
+          launched with test customers and refined the product.
+        </p>
+        <p className="mb-4 text-gray-600">
+          One year later, we joined{" "}
+          <a href="https://igniteni.com/" className="link">
+            Ignite Propel
+          </a>{" "}
+          and publicly launched gaining over 200 customers in the weeks to
+          follow.
+        </p>
+        <p className="mb-4 text-gray-600">
+          Our{" "}
+          <a href="https://www.producthunt.com/posts/payhere" className="link">
+            Product Hunt launch
+          </a>{" "}
+          was awesome and we came in #4 for the day.
+        </p>
+      </TimelineItem>
+
+      <TimelineItem
+        key="003"
+        dateComponent={<div className="text-gray-600 ml-10 md:ml-0">2020</div>}
+        style={{ color: "#38b2ac" }}
+      >
+        <h3 className="mb-3 font-semibold text-gray-900">
+          Alt is a Product House
+        </h3>
+        <p className="mb-4 text-gray-600">
+          In early March we made the decision to stop client projects and focus
+          solely on growing our own digital products.
+        </p>
+        <p className="mb-4 text-gray-600">
+          Alt Labs will live on as a product house, essentially a holding
+          company for all the products we launch.
+        </p>
+        <p className="mb-4 text-gray-600">
+          At the same time we started the{" "}
+          <a href="https://igniteni.com/" className="link">
+            Ignite Accelerator
+          </a>{" "}
+          with Payhere, continuing to market the product.
+        </p>
+      </TimelineItem>
+    </Timeline>
   </Layout>
 )
 
