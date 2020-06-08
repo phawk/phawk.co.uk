@@ -1,4 +1,6 @@
 import React from "react"
+import "vertical-timeline-component-for-react/dist/Timeline.css"
+import "vertical-timeline-component-for-react/dist/TimelineItem.css"
 import { Timeline, TimelineItem } from "vertical-timeline-component-for-react"
 
 import altLogo from "../images/altlabs.svg"
