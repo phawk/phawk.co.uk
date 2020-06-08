@@ -36,15 +36,30 @@ const AboutPage = () => (
         </p>
         <p className="mb-4 text-gray-600">
           I worked for various agencies and startups such as{" "}
-          <a href="http://typecast.com" className="link">
+          <a
+            href="http://typecast.com"
+            className="link"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
             Typecast
           </a>
           ,{" "}
-          <a href="http://craftydevil.co.uk" className="link">
+          <a
+            href="http://craftydevil.co.uk"
+            className="link"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
             Crafty Devil
           </a>{" "}
           and{" "}
-          <a href="http://propertypal.com" className="link">
+          <a
+            href="http://propertypal.com"
+            className="link"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
             PropertyPal
           </a>
           .
@@ -59,7 +74,12 @@ const AboutPage = () => (
         <img src={altLogo} alt="Alt Labs" className="w-16 mb-5" />
         <p className="mb-4 text-gray-600">
           I founded{" "}
-          <a href="https://alternatelabs.co" className="link">
+          <a
+            href="https://alternatelabs.co"
+            className="link"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
             Alt Labs
           </a>{" "}
           in late 2014 – a small software agency that builds ambitious
@@ -81,7 +101,12 @@ const AboutPage = () => (
       >
         <img src={payhereLogo} alt="Payhere" className="w-10 mb-5" />
         <p className="mb-4 text-gray-600">
-          <a href="https://payhere.co" className="link">
+          <a
+            href="https://payhere.co"
+            className="link"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
             Payhere
           </a>{" "}
           was born out of Alt Labs from continously building payment
@@ -90,7 +115,12 @@ const AboutPage = () => (
         </p>
         <p className="mb-4 text-gray-600">
           One year later, we joined{" "}
-          <a href="https://igniteni.com/" className="link">
+          <a
+            href="https://igniteni.com/"
+            className="link"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
             Ignite Propel
           </a>{" "}
           and publicly launched gaining over 200 customers in the weeks to
@@ -98,7 +128,12 @@ const AboutPage = () => (
         </p>
         <p className="mb-4 text-gray-600">
           Our{" "}
-          <a href="https://www.producthunt.com/posts/payhere" className="link">
+          <a
+            href="https://www.producthunt.com/posts/payhere"
+            className="link"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
             Product Hunt launch
           </a>{" "}
           was awesome and we came in #4 for the day.
@@ -123,7 +158,12 @@ const AboutPage = () => (
         </p>
         <p className="mb-4 text-gray-600">
           At the same time we started the{" "}
-          <a href="https://igniteni.com/" className="link">
+          <a
+            href="https://igniteni.com/"
+            className="link"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
             Ignite Accelerator
           </a>{" "}
           with Payhere, continuing to market the product.
