@@ -5,6 +5,8 @@ import Layout from "../components/Layouts/Base"
 import SEO from "../components/seo"
 import List from "../components/Blog/List"
 import PageTitle from "../components/PageTitle"
+import gatsbyLogo from "../images/gatsby.svg"
+import reactLogo from "../images/react.svg"
 
 const BlogIndex = ({ data }) => {
   const posts = data.allMarkdownRemark.edges
@@ -12,6 +14,11 @@ const BlogIndex = ({ data }) => {
   return (
     <Layout>
       <SEO title="Blog" />
+      <div className="mt-10 lg:mt-12 flex items-center mb-5">
+        <img src={gatsbyLogo} alt="Gatsby" className="w-10 h-10" />
+        <span className="text-3xl font-light mx-3 text-gray-400">+</span>
+        <img src={reactLogo} alt="React" className="w-12 h-12" />
+      </div>
       <PageTitle>Jamstack with Gatsby + React.</PageTitle>
       <p className="text-xl">
         The modern developer assembles the best headless APIs and brings them
