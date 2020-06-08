@@ -8,7 +8,7 @@ import PageTitle from "../components/PageTitle"
 const IndexPage = () => (
   <Layout>
     <SEO title="Home" />
-    <div className="mt-12 lg:mt-16">
+    <div className="py-12 lg:py-16">
       <Avatar className="mb-3 w-24 h-24" />
       <PageTitle>Making things with React.</PageTitle>
       <p className="text-xl">

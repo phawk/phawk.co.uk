@@ -141,7 +141,7 @@ const AboutPage = () => (
       </TimelineItem>
 
       <TimelineItem
-        key="003"
+        key="004"
         dateComponent={<div className="text-gray-600 ml-10 md:ml-0">2020</div>}
         style={{ color: "#38b2ac" }}
       >

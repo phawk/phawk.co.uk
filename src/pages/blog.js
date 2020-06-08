@@ -14,7 +14,7 @@ const BlogIndex = ({ data }) => {
   return (
     <Layout>
       <SEO title="Blog" />
-      <div className="mt-10 lg:mt-12 flex items-center mb-5">
+      <div className="flex items-center mb-5">
         <img src={gatsbyLogo} alt="Gatsby" className="w-10 h-10" />
         <span className="text-3xl font-light mx-3 text-gray-400">+</span>
         <img src={reactLogo} alt="React" className="w-12 h-12" />
