@@ -76,7 +76,11 @@ module.exports = {
         printRejected: true, // Print removed selectors and processed file names
         develop: false, // Enable while using `gatsby develop`
         tailwind: true, // Enable tailwindcss support
-        ignore: ["/ignored.css"], // Ignore files/folders
+        ignore: [
+          "/ignored.css",
+          "vertical-timeline-component-for-react/Timeline.css",
+          "vertical-timeline-component-for-react/TimelineItem.css",
+        ], // Ignore files/folders
       },
     },
   ],
