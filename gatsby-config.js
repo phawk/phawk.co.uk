@@ -77,7 +77,11 @@ module.exports = {
         develop: false, // Enable while using `gatsby develop`
         tailwind: true, // Enable tailwindcss support
         whitelistPatterns: [/^timeline/],
-        ignore: ["/ignored.css"], // Ignore files/folders
+        ignore: [
+          "/ignored.css",
+          "vertical-timeline-component-for-react/dist/Timeline.css",
+          "vertical-timeline-component-for-react/dist/TimelineItem.css",
+        ], // Ignore files/folders
       },
     },
   ],
