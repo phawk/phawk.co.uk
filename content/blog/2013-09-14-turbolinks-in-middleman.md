@@ -3,6 +3,7 @@ layout: post
 title: 'Turbolinks in middleman'
 tags: Ruby, Middleman
 date: "2013-09-14T22:00:00.000Z"
+archived: true
 ---
 
 Rails 4 now comes with [Turbolinks](http://github.com/rails/turbolinks) enabled by default, I think this is great and would love to see more sites make use of this technology if it&#8217;s feasable.

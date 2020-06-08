@@ -4,6 +4,7 @@ title: Automating your tests
 tags: JavaScript, node, Testing
 category_id: testing
 date: "2013-01-08T22:00:00.000Z"
+archived: true
 ---
 
 Having a test suite is awesome, doing TDD is awesome too, but what if you make that really quick change and forget to run those tests? It's likely to blow up in your face.

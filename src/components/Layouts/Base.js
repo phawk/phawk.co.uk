@@ -16,19 +16,19 @@ const BaseLayout = ({ children }) => {
           <span className="hidden lg:block lg:flex-1"></span>
           <Link
             to="/blog/"
-            className="mr-5 lg:mr-8 font-semibold text-gray-700 hover:text-gray-800 text-lg"
+            className="mr-5 lg:mr-8 font-normal text-gray-700 hover:text-gray-800 text-lg"
           >
             Blog
           </Link>
           <Link
-            to="/apps/"
-            className="mr-5 lg:mr-8 font-semibold text-gray-700 hover:text-gray-800 text-lg"
+            to="/projects/"
+            className="mr-5 lg:mr-8 font-normal text-gray-700 hover:text-gray-800 text-lg"
           >
-            Apps
+            Projects
           </Link>
           <Link
             to="/about/"
-            className="font-semibold text-gray-700 hover:text-gray-800 text-lg"
+            className="font-normal text-gray-700 hover:text-gray-800 text-lg"
           >
             About
           </Link>

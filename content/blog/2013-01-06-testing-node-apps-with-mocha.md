@@ -4,6 +4,7 @@ title: Testing node.js apps with mocha
 tags: JavaScript, node, Testing
 category_id: testing
 date: "2013-01-06T22:00:00.000Z"
+archived: true
 ---
 
 A couple of days ago I wrote an article on [Testing Backbone.js with mocha](/blog/testing-backbone-with-mocha), this was a primer on doing TDD in one of the easiest environments possible, all you needed to get started was a web browser. If you have never done TDD before, I'd recommend checking out [that post](/blog/testing-backbone-with-mocha) first.

@@ -4,6 +4,7 @@ title: Testing Backbone.js with mocha
 tags: JavaScript, Backbone.js, Testing
 category_id: testing
 date: "2013-01-04T22:00:00.000Z"
+archived: true
 ---
 
 This is a zero setup quick starter to using TDD, it should take about 20minutes of your time max!

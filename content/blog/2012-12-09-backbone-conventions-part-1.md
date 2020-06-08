@@ -3,6 +3,7 @@ layout: post
 title: Backbone.js conventions (part 1)
 tags: JavaScript, Backbone.js
 date: "2012-12-09T22:00:00.000Z"
+archived: true
 ---
 
 [Backbone.js](http://backbonejs.org/) is a very popular client side framework, it is very flexible and thus has many different ways of doing things. I've found so many different examples on the web of how to do things in backbone, this makes it very difficult for beginners to know which is the right convention to follow.

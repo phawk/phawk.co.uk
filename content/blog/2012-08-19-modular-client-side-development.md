@@ -3,6 +3,7 @@ layout: post
 title: Modular client-side development
 tags: JavaScript, Web Apps
 date: "2012-08-19T22:00:00.000Z"
+archived: true
 ---
 
 From using node.js and sinatra quite a lot in the past few months it has really been evident that our client side JavaScript code and loaders don't seem to deal with the modular concept very easily. I have spent the past few weeks building modules or micro applications that form a piece of a bigger puzzle. Reading through [TJ's post on components](http://tjholowaychuk.com/post/27984551477/components) at the end of last week and how the guys at learn boost have pretty much built their entire application based on this concept was comforting and you should definitely give it a read!
