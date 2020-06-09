@@ -6,6 +6,10 @@ import Layout from "../components/Layouts/Base"
 import SEO from "../components/seo"
 import PageTitle from "../components/PageTitle"
 import Avatar from "../components/Avatar"
+import Contents from "../components/Blog/Contents"
+import { MDXProvider } from "@mdx-js/react"
+
+const shortcodes = { Contents }
 
 export const pageQuery = graphql`
   query BlogPostBySlug($slug: String!) {
@@ -54,7 +58,9 @@ const BlogPostTemplate = ({ data, pageContext }) => {
           </figure>
         )}
         <section className="styled-text">
-          <MDXRenderer>{post.body}</MDXRenderer>
+          <MDXProvider components={shortcodes}>
+            <MDXRenderer>{post.body}</MDXRenderer>
+          </MDXProvider>
         </section>
       </article>
 
