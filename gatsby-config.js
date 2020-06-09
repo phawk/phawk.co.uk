@@ -85,10 +85,9 @@ module.exports = {
         printRejected: true, // Print removed selectors and processed file names
         develop: false, // Enable while using `gatsby develop`
         tailwind: true, // Enable tailwindcss support
-        whitelistPatterns: [/^timeline/],
+        whitelistPatterns: [/^timeline/, /^styled-text/],
         ignore: [
           "/ignored.css",
-          "src/styles/components/*",
           "vertical-timeline-component-for-react/dist/Timeline.css",
           "vertical-timeline-component-for-react/dist/TimelineItem.css",
           "prismjs/",
