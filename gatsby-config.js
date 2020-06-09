@@ -29,12 +29,14 @@ module.exports = {
               maxWidth: 590,
             },
           },
-          `gatsby-remark-prismjs`,
+          `gatsby-remark-autolink-headers`,
           `gatsby-remark-copy-linked-files`,
+          `gatsby-remark-prismjs`,
         ],
       },
     },
     `gatsby-plugin-react-helmet`,
+    `gatsby-remark-images`,
     {
       resolve: `gatsby-source-filesystem`,
       options: {
