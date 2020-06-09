@@ -88,6 +88,7 @@ module.exports = {
         whitelistPatterns: [/^timeline/],
         ignore: [
           "/ignored.css",
+          "src/styles/components/*",
           "vertical-timeline-component-for-react/dist/Timeline.css",
           "vertical-timeline-component-for-react/dist/TimelineItem.css",
           "prismjs/",
