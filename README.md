@@ -18,7 +18,7 @@ Deploys are handled by [Netlify](https://www.netlify.com/) and happen automatica
 ### Creating a post
 
 ```sh
-touch ./content/blog/2020-06-09-new-post-title.md
+touch ./content/blog/2020-06-09-new-post-title.mdx
 ```
 
 ## License

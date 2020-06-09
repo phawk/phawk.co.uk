@@ -1,5 +1,6 @@
 import React from "react"
 import { Link, graphql } from "gatsby"
+import { MDXRenderer } from "gatsby-plugin-mdx"
 
 import Layout from "../components/Layouts/Base"
 import SEO from "../components/seo"
@@ -8,10 +9,10 @@ import Avatar from "../components/Avatar"
 
 export const pageQuery = graphql`
   query BlogPostBySlug($slug: String!) {
-    markdownRemark(fields: { slug: { eq: $slug } }) {
+    mdx(fields: { slug: { eq: $slug } }) {
       id
       excerpt(pruneLength: 160)
-      html
+      body
       frontmatter {
         title
         date(formatString: "MMM Do, YYYY")
@@ -24,7 +25,7 @@ export const pageQuery = graphql`
 `
 
 const BlogPostTemplate = ({ data, pageContext }) => {
-  const post = data.markdownRemark
+  const post = data.mdx
   const { previous, next } = pageContext
 
   return (
@@ -52,10 +53,9 @@ const BlogPostTemplate = ({ data, pageContext }) => {
             )}
           </figure>
         )}
-        <section
-          className="styled-text"
-          dangerouslySetInnerHTML={{ __html: post.html }}
-        />
+        <section className="styled-text">
+          <MDXRenderer>{post.body}</MDXRenderer>
+        </section>
       </article>
 
       <nav className="mt-10 lg:mt-16">

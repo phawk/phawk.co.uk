@@ -8,8 +8,36 @@ import PageTitle from "../components/PageTitle"
 import gatsbyLogo from "../images/gatsby.svg"
 import reactLogo from "../images/react.svg"
 
+export const pageQuery = graphql`
+  query blogIndexListQuery {
+    site {
+      siteMetadata {
+        title
+      }
+    }
+    allMdx(
+      sort: { fields: [frontmatter___date], order: DESC }
+      filter: { frontmatter: { draft: { ne: true }, archived: { ne: true } } }
+    ) {
+      edges {
+        node {
+          excerpt
+          fields {
+            slug
+          }
+          frontmatter {
+            date(formatString: "MMMM DD, YYYY")
+            title
+            description
+          }
+        }
+      }
+    }
+  }
+`
+
 const BlogIndex = ({ data }) => {
-  const posts = data.allMarkdownRemark.edges
+  const posts = data.allMdx.edges
 
   return (
     <Layout>
@@ -38,31 +66,3 @@ const BlogIndex = ({ data }) => {
 }
 
 export default BlogIndex
-
-export const pageQuery = graphql`
-  query blogIndexListQuery {
-    site {
-      siteMetadata {
-        title
-      }
-    }
-    allMarkdownRemark(
-      sort: { fields: [frontmatter___date], order: DESC }
-      filter: { frontmatter: { draft: { ne: true }, archived: { ne: true } } }
-    ) {
-      edges {
-        node {
-          excerpt
-          fields {
-            slug
-          }
-          frontmatter {
-            date(formatString: "MMMM DD, YYYY")
-            title
-            description
-          }
-        }
-      }
-    }
-  }
-`
