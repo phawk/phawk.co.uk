@@ -43,7 +43,17 @@ const BlogPostTemplate = ({ data, pageContext }) => {
           <PageTitle>{post.frontmatter.title}</PageTitle>
           <div className="flex items-center">
             <Avatar className="h-10 w-10 mr-4" />
-            <span>Pete posted on {post.frontmatter.date}</span>
+            <span>
+              <a
+                href="https://twitter.com/peteyhawkins"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="underline"
+              >
+                Pete
+              </a>{" "}
+              posted on {post.frontmatter.date}
+            </span>
           </div>
         </header>
         {post.frontmatter.img && (

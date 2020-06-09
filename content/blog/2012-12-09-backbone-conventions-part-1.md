@@ -34,7 +34,7 @@ app.events.bind("some-module:some-event", this.callbackMethod, this);
 
 The `this.el` element within the Backbone views can easily be passed in using a common technique called Inversion of Control. This allows us to do flexible things when testing our views:
 
-- Testing views we can pass in an in-memory DOM node $('<div>')
+- Testing views we can pass in an in-memory DOM node $('&lt;div&gt;')
 - We can use in memory nodes on list views to build up list items and then only append once to the actual DOM.
 
 ```js
