@@ -91,6 +91,7 @@ module.exports = {
           "vertical-timeline-component-for-react/dist/Timeline.css",
           "vertical-timeline-component-for-react/dist/TimelineItem.css",
           "prismjs/",
+          "prism-themes/themes/prism-nord.css",
           "/prism.css",
         ], // Ignore files/folders
       },
