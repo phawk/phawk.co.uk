@@ -90,6 +90,8 @@ module.exports = {
           "/ignored.css",
           "vertical-timeline-component-for-react/dist/Timeline.css",
           "vertical-timeline-component-for-react/dist/TimelineItem.css",
+          "prismjs/",
+          "/prism.css",
         ], // Ignore files/folders
       },
     },
