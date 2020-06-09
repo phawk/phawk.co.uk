@@ -6,23 +6,31 @@ date: "2020-06-09T20:00:00.000Z"
 author: pete
 ---
 
-Tailwind CSS has taken frontend styling by storm, it’s not quite CSS-in-JS but can provide many of the same benefits without having to write a lot of boilerplate and in my opinion works really well with React.
-
-I’ll give a bit of an overview to why I use tailwind for the majority of my projects, if you are already a convert and simply want to know how to use it with Gatsby you can skip ahead.
+[Tailwind CSS](https://tailwindcss.com/) has taken frontend styling by storm, it’s not quite CSS-in-JS but can provide many of the same benefits without having to write a lot of boilerplate code. In my opinion works really well with React!
 
 <Contents data={{
-  "why-tailwind": "Why tailwind",
+  "why-tailwind": "Why tailwind?",
   "how-to-get-started": "How to get started",
   "reusing-styles-by-creating-components": "Reusing styles by creating components",
 }} />
 
 ## Why tailwind?
 
-I am a recent convert to tailwind despite knowing of it for a long time, mainly due to the fact that I was already using a utility CSS framework tachyons. Tachyons has many of the same benefits and works exactly the same way,
+I am a recent convert to tailwind despite knowing of it for a long time – mainly due to the fact that I was already using a utility CSS framework [tachyons](https://tachyons.io/).
 
-If you have seen the utility CSS style and initally thought it was horrible, I have writing HTML and for almost 20 years now and I felt the same way initially. What changed my mind was persevering with it and realising just how much faster I could style components, particularly adding different margins and padding when reusing them in different locations. The other great benefit is theming and sticking to a subset of colours. Constraints imposed on design make it a lot faster to build UIs and often tend to make the overall feel and rythym more consistent.
+Tachyons has many of the same benefits and works in a very similar way.
 
-With the switch to tailwind I did notice some major improvements over the tachyons library I was using previously.
+If you have seen the utility styles approach and thought it was horrible I felt the same way initially.
+
+What changed my mind was persevering with it and realising how much faster I could style websites.
+
+This is particularly benefitial when adding margins and padding when reusing components in different locations. The other great benefit is theming and sticking to a subset of colours.
+
+Constraints imposed on design make it a lot faster to build UIs and often tend to make the overall feel and rythym more consistent.
+
+### Benefits of tailwind vs. tachyons
+
+With the switch to tailwind I did notice some major improvements over tachyons:
 
 - Responsive prefixes like `flex flex-col md:flex-row` are super helpful and even `hover:` and `focus:` psuedo selectors make interactive styling a breeze.
 - Tight integration with Post CSS, purge CSS and the whole node.js ecosystem
@@ -30,9 +38,9 @@ With the switch to tailwind I did notice some major improvements over the tachyo
 
 Overall I’m really happy with tailwind, even comparing with emotion and styled-components.
 
-Couple tailwind with Gatsby or any other React based framework and you can create components for each element in your design, enabling you to reuse the lengthy class names easily and avoid repetition.
+Couple tailwind with [Gatsby](https://www.gatsbyjs.org/) or any other React based framework and you can create components for each element in your design, enabling you to reuse the lengthy class names easily and avoid repetition.
 
-If you have any concerns about performance (I initially did), turns out compression algorithms like GZIP and Brotli are fantastic at optimising similar strings, so that's a non-issue.
+*If you have any concerns about performance (I initially did), turns out, compression algorithms like GZIP and Brotli are fantastic at optimising similar strings, so that's a non-issue.*
 
 ## How to get started
 
@@ -72,17 +80,18 @@ Add the following to your `gatsby-config.js` file.
 
 #### 3. Create tailwind config
 
-Run this in the root of your project to create your tailwind config file. Here you can override and extend styles or set your base font family etc.
+Run this in the root of your project to create your tailwind config file. Here you can [override and extend styles or set your base font family](https://tailwindcss.com/docs/configuration) etc.
 
-```
+```sh
 $ npx tailwindcss init
 ```
 
 #### 5. Setup `src/styles/app.css`
 
-Setup your stylesheet for your application and import in your main layout file.
+Setup your stylesheet for your application and import in your main layout file so it is required on every page.
 
-```
+```css
+/* src/styles/app.css */
 @import "tailwindcss/base";
 
 @import "tailwindcss/components";
@@ -90,13 +99,10 @@ Setup your stylesheet for your application and import in your main layout file.
 @import "tailwindcss/utilities";
 ```
 
-```
+```jsx
+/* src/components/layout.js */
 import "../styles/app.css"
 ```
-
-#### 6. Bonus: Adding tailwind UI
-
-...
 
 ## Reusing styles by creating components
 
@@ -126,6 +132,7 @@ export default Button
 Using your new button is easy.
 
 ```jsx
+// src/pages/index.js
 import Layout from "../components/Layout"
 import Button from "../components/Button"
 
@@ -139,3 +146,5 @@ const IndexPage = () => {
   )
 }
 ```
+
+Hopefully you found this useful. If you have any further questions or want to share anything you have built with Gatsby and tailwind please [reach out to me on twitter](https://twitter.com/peteyhawkins).

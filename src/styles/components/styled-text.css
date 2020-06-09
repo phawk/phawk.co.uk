@@ -5,9 +5,6 @@
 
   p {
     @apply mb-4 leading-relaxed;
-    @media screen and (min-width: 768px) {
-      @apply text-xl;
-    }
   }
 
   a {
@@ -39,19 +36,41 @@
   ul {
     list-style-type: disc;
     list-style-position: inside;
- }
- ol {
+  }
+  ol {
     list-style-type: decimal;
     list-style-position: inside;
- }
- ul ul, ol ul {
+  }
+  ul, ol {
+    @apply mb-6;
+  }
+
+  ul ul, ol ul {
     list-style-type: circle;
     list-style-position: inside;
     margin-left: 15px;
- }
- ol ol, ul ol {
+  }
+  ol ol, ul ol {
     list-style-type: lower-latin;
     list-style-position: inside;
     margin-left: 15px;
- }
+  }
+
+  li {
+    @apply mb-3 leading-relaxed;
+  }
+
+  li code, p code {
+    @apply text-base bg-gray-200 text-gray-600;
+  }
+
+  h2 code, h3 code, h4 code {
+    @apply bg-gray-200 text-gray-600;
+  }
+
+  @media screen and (min-width: 768px) {
+    p, li, h4 {
+      @apply text-xl;
+    }
+  }
 }
