@@ -1,12 +1,13 @@
 import React from "react"
 
-const Logo = ({ className }) => {
+const Logo = ({ className, ...rest }) => {
   return (
     <svg
       className={className}
       viewBox="0 0 86 86"
       fill="currentColor"
       xmlns="http://www.w3.org/2000/svg"
+      {...rest}
     >
       <path
         fillRule="evenodd"

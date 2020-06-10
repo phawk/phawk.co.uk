@@ -1,17 +1,33 @@
 import "../../styles/app.css"
 import React from "react"
-import { Link } from "gatsby"
+import { Link, useStaticQuery, graphql } from "gatsby"
 import PropTypes from "prop-types"
 
 import Logo from "../Logo"
 
 const BaseLayout = ({ children }) => {
+  const data = useStaticQuery(graphql`
+    query SiteMetaQuery {
+      site {
+        siteMetadata {
+          title
+          mailchimpURL
+          social {
+            twitter
+          }
+        }
+      }
+    }
+  `)
   return (
     <>
       <div className="border-b border-gray-300 flex items-stretch justify-between">
         <div className="p-4 sm:px-6 lg:px-8 flex-1 flex items-center">
           <Link to="/" className="mr-6 lg:mr-8">
-            <Logo className="h-6 w-6 text-teal-500" />
+            <Logo
+              className="h-6 w-6 text-teal-500"
+              title={data.site.siteMetadata.title}
+            />
           </Link>
           <Link
             to="/blog/"
@@ -33,11 +49,16 @@ const BaseLayout = ({ children }) => {
           </Link>
         </div>
         <div className="hidden sm:flex border-l border-gray-300 p-3 px-4">
-          <button className="bg-gray-600 hover:bg-gray-700 px-2 font-medium rounded text-white">
-            Subscribe
-          </button>
           <a
-            href="https://twitter.com/peteyhawkins"
+            href={data.site.siteMetadata.mailchimpURL}
+            target="_blank"
+            rel="noopener noreferrer"
+            className="bg-gray-600 flex items-center hover:bg-gray-700 px-2 font-medium rounded text-white"
+          >
+            Subscribe
+          </a>
+          <a
+            href={`https://twitter.com/${data.site.siteMetadata.social.twitter}`}
             target="_blank"
             rel="noopener noreferrer"
             className="self-stretch ml-2 flex items-center px-2 lg:px-3 text-gray-600 hover:text-gray-700"
@@ -73,7 +94,7 @@ const BaseLayout = ({ children }) => {
             </a>
           </div>
           <a
-            href="https://twitter.com/peteyhawkins"
+            href={`https://twitter.com/${data.site.siteMetadata.social.twitter}`}
             target="_blank"
             rel="noopener noreferrer"
             className="block md:text-right link"
