@@ -1,4 +1,10 @@
+[build]
+  publish = "public"
+
 [build.environment]
   YARN_VERSION = "1.22.0"
   YARN_FLAGS = "--production=false"
   NODE_ENV = "production"
+
+[[plugins]]
+  package = "netlify-plugin-gatsby-cache"
