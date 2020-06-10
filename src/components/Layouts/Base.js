@@ -35,12 +35,12 @@ const BaseLayout = ({ children }) => {
           >
             Blog
           </Link>
-          {/*<Link
+          <Link
             to="/projects/"
             className="mr-5 lg:mr-8 font-medium text-gray-700 hover:text-gray-800 text-base"
           >
             Projects
-          </Link>*/}
+          </Link>
           <Link
             to="/about/"
             className="font-medium text-gray-700 hover:text-gray-800 text-base"
