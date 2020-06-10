@@ -96,5 +96,11 @@ module.exports = {
         ], // Ignore files/folders
       },
     },
+    {
+      resolve: `gatsby-plugin-google-analytics`,
+      options: {
+        trackingId: `UA-8135554-1`,
+      },
+    },
   ],
 }
