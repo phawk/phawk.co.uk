@@ -41,7 +41,7 @@ const BlogIndex = ({ data }) => {
 
   return (
     <Layout>
-      <SEO title="Blog" />
+      <SEO title="Learn to build blazing fast sites with Gatsby.js" />
       <div className="flex items-center mb-5">
         <img src={gatsbyLogo} alt="Gatsby" className="w-10 h-10" />
         <span className="text-3xl font-light mx-3 text-gray-400">+</span>

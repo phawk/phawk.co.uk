@@ -1,7 +1,7 @@
 module.exports = {
   siteMetadata: {
     title: `phawk`,
-    description: `All things Gatsby from a React developer building complex client side apps for 10+ years.`,
+    description: `Learn how to build blazing fast sites and web apps using Gatsby JS from a React developer who has been building complex frontend apps for 10+ years`,
     author: `@peteyhawkins`,
     mailchimpURL: `http://eepurl.com/c5xsXb`,
     mailchimpId: `a5b7e44720`,

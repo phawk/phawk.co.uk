@@ -7,7 +7,7 @@ import PageTitle from "../components/PageTitle"
 
 const IndexPage = () => (
   <Layout>
-    <SEO title="Home" />
+    <SEO title="Learn to build blazing fast sites with Gatsby.js" />
     <div className="py-12 lg:py-16">
       <Avatar className="mb-3 w-24 h-24" />
       <PageTitle>Making things with React.</PageTitle>
