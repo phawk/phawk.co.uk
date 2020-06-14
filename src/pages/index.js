@@ -18,17 +18,17 @@ const IndexPage = () => (
         along the way. Hopefully you can find some helpful resources here.
       </p>
 
-      <div className="mt-10 flex items-center">
+      <div className="mt-10 flex flex-col sm:flex-row sm:items-center">
         <Link
           to="/blog/"
-          className="mr-3 py-3 px-4 text-lg font-medium text-white bg-teal-500 border border-teal-500 rounded"
+          className="sm:mr-3 py-3 px-4 text-lg font-medium text-white bg-teal-500 border border-teal-500 rounded"
         >
-          Read articles
+          Learn Gatsby + React
         </Link>
 
         <Link
           to="/projects/"
-          className="py-3 px-4 text-lg font-medium text-teal-500 border border-teal-500 rounded"
+          className="mt-4 sm:mt-0 py-3 px-4 text-lg font-medium text-teal-500 border border-teal-500 rounded"
         >
           See my projects
         </Link>
