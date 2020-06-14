@@ -4,7 +4,7 @@ import "vertical-timeline-component-for-react/dist/TimelineItem.css"
 import { Timeline, TimelineItem } from "vertical-timeline-component-for-react"
 
 import altLogo from "../images/altlabs.svg"
-import payhereLogo from "../images/payhere-icon.svg"
+import payhereLogo from "../images/payhere-icon-blue.svg"
 import Layout from "../components/Layouts/Base"
 import SEO from "../components/seo"
 import PageTitle from "../components/PageTitle"

@@ -1,4 +1,5 @@
 import React from "react"
+import { Link } from "gatsby"
 
 import Layout from "../components/Layouts/Base"
 import SEO from "../components/seo"
@@ -16,6 +17,22 @@ const IndexPage = () => (
         building complex client-side apps for over 10 years, learning a lot
         along the way. Hopefully you can find some helpful resources here.
       </p>
+
+      <div className="mt-10 flex items-center">
+        <Link
+          to="/blog/"
+          className="mr-3 py-3 px-4 text-lg font-medium text-white bg-teal-500 border border-teal-500 rounded"
+        >
+          Read articles
+        </Link>
+
+        <Link
+          to="/projects/"
+          className="py-3 px-4 text-lg font-medium text-teal-500 border border-teal-500 rounded"
+        >
+          See my projects
+        </Link>
+      </div>
     </div>
   </Layout>
 )
