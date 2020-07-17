@@ -1,0 +1,327 @@
+---
+layout: post
+title: Setting up an MDX blog with Gatsby
+tags: ["gatsby"]
+date: "2020-07-17T20:00:00.000Z"
+author: pete
+---
+
+MDX is the latest ‘coolness’ when it comes to writing content these days, it combines the ease of use of Mardown with the ability to use React components within your content. This allows you to do cool things like custom click-able table of contents and embedding custom dynamic functionality.
+
+As for setting up MDX with Gatsby it’s fairly straightforward to use as the format for your standard pages but setting up blog articles using MDX is a little harder to follow.
+
+Below I’ll show you the steps to do both, *this will be a very code heavy article*, hopefully it will help you get set up!
+
+## Installing dependencies
+
+```sh
+$ yarn add gatsby-plugin-mdx @mdx-js/mdx @mdx-js/react gatsby-source-filesystem gatsby-remark-autolink-headers gatsby-remark-copy-linked-files gatsby-remark-images gatsby-remark-prismjs@3.5.3 prism-themes prismjs
+```
+
+## Setting up a folder to write your content
+
+Next you want to create a folder that contains all your blog articles, I've gone with `./content/blog` and configure **gatsby-source-filesystem** to load in your content.
+
+```js
+// gatsby-config.js
+module.exports = {
+  // ...
+  plugins: [
+    // Add the following into your plugins
+    {
+      resolve: `gatsby-source-filesystem`,
+      options: {
+        path: `${__dirname}/content/blog`,
+        name: `blog`,
+      },
+    },
+    // ...
+  ],
+}
+```
+
+## Configuring MDX
+
+Again in your Gatsby config we need to set up **gatsby-plugin-mdx**. I've included a few useful plugins for MDX to add clickable links to the headers in your articles, along with helpers to import images and syntax highlighting for code blocks.
+
+```js
+// gatsby-config.js
+module.exports = {
+  // ...
+  plugins: [
+    // Add the following into your plugins below the filesystem import in the previous step
+    {
+      resolve: `gatsby-plugin-mdx`,
+      options: {
+        extensions: [".mdx", ".md"],
+        gatsbyRemarkPlugins: [
+          {
+            resolve: `gatsby-remark-images`,
+            options: {
+              maxWidth: 590,
+            },
+          },
+          `gatsby-remark-autolink-headers`,
+          `gatsby-remark-copy-linked-files`,
+          `gatsby-remark-prismjs`,
+        ],
+      },
+    },
+    // ...
+  ],
+}
+```
+
+##  Configuring gatsby-node for creating pages for each blog post
+
+Next up is setting up Gatsby to read each blog post and create a page for it.
+
+This code will use the file path as the URL for the post, stripping out the prefixed date at the front. I like to prefix the file paths with a date i.e. `./content/blog/2020-07-17-mdx-blog-with-gatsby.mdx` so each post is ordered nicely and makes it easy to find within your code editor.
+
+Adjust appropriately if you want to use the full file path including any dates as the start.
+
+```js
+// gatsby-node.js
+const path = require(`path`)
+const { createFilePath } = require(`gatsby-source-filesystem`)
+
+function createBlogPostPath(slug) {
+  slug = slug.replace(/^\/\d{4}-\d{2}-\d{2}-/, "/")
+  return `/blog${slug}`
+}
+
+exports.createPages = async ({ graphql, actions }) => {
+  const { createPage } = actions
+
+  const blogPost = path.resolve(`./src/templates/blog-post.js`)
+  const result = await graphql(
+    `
+      {
+        allMdx(
+          sort: { fields: [frontmatter___date], order: DESC }
+          limit: 1000
+        ) {
+          edges {
+            node {
+              fields {
+                slug
+              }
+              frontmatter {
+                title
+              }
+            }
+          }
+        }
+      }
+    `
+  )
+
+  if (result.errors) {
+    throw result.errors
+  }
+
+  // Create blog posts pages.
+  const posts = result.data.allMdx.edges
+
+  // Create individual blog post pages
+  posts.forEach((post, index) => {
+    const previous = index === posts.length - 1 ? null : posts[index + 1].node
+    const next = index === 0 ? null : posts[index - 1].node
+
+    createPage({
+      path: post.node.fields.slug,
+      component: blogPost,
+      context: {
+        slug: post.node.fields.slug,
+        previous,
+        next,
+      },
+    })
+  })
+}
+
+exports.onCreateNode = ({ node, actions, getNode }) => {
+  const { createNodeField } = actions
+  // you only want to operate on `Mdx` nodes. If you had content from a
+  // remote CMS you could also check to see if the parent node was a
+  // `File` node here
+  if (node.internal.type === "Mdx") {
+    const value = createBlogPostPath(createFilePath({ node, getNode }))
+    createNodeField({
+      // Name of the field you are adding
+      name: "slug",
+      // Individual MDX node
+      node,
+      // Generated value based on filepath with "blog" prefix. you
+      // don't need a separating "/" before the value because
+      // createFilePath returns a path with the leading "/".
+      value,
+    })
+  }
+}
+```
+
+## Setting up your blog list page
+
+Now I’ll show you how to perform a graphql query fetching all of your MDX files and listing them out.
+
+```js
+// ./src/pages/index.js
+import React from "react"
+import { Link, graphql } from "gatsby"
+
+import Layout from "../components/layout"
+import SEO from "../components/seo"
+
+export const pageQuery = graphql`
+  query blogIndexListQuery {
+    site {
+      siteMetadata {
+        title
+      }
+    }
+    allMdx(
+      sort: { fields: [frontmatter___date], order: DESC }
+      filter: { frontmatter: { draft: { ne: true } } }
+    ) {
+      edges {
+        node {
+          excerpt
+          fields {
+            slug
+          }
+          frontmatter {
+            date(formatString: "MMMM DD, YYYY")
+            title
+            description
+          }
+        }
+      }
+    }
+  }
+`
+
+const BlogIndex = ({ data }) => {
+  const posts = data.allMdx.edges
+
+  return (
+    <Layout>
+      <SEO title="Learn to build blazing fast sites with Gatsby.js" />
+
+      <h1>Welcome to my blog</h1>
+      <div>
+        {posts.map(({ node }) => {
+          const title = node.frontmatter.title || node.fields.slug
+          return (
+            <Link
+              key={node.fields.slug}
+              to={node.fields.slug}
+            >
+              <h2>
+                {title}
+              </h2>
+
+              <span
+                dangerouslySetInnerHTML={{
+                  __html: node.excerpt,
+                }}
+              />
+              <small>
+                {node.frontmatter.date}
+              </small>
+            </Link>
+          )
+        })}
+      </div>
+    </Layout>
+  )
+}
+
+export default BlogIndex
+```
+
+## Setting up a page for individual articles
+
+You may have noticed from the code in gatsby-node.js we loaded a template:
+
+```js
+const blogPost = path.resolve(`./src/templates/blog-post.js`)
+```
+
+This is the page we’ll be using to render each blog post and you can use the following content and tweak to fit your needs.
+
+```js
+// ./src/templates/blog-post.js
+import React from "react"
+import { Link, graphql } from "gatsby"
+import { MDXRenderer } from "gatsby-plugin-mdx"
+
+import Layout from "../components/layout"
+import SEO from "../components/seo"
+import { MDXProvider } from "@mdx-js/react"
+
+export const pageQuery = graphql`
+  query BlogPostBySlug($slug: String!) {
+    mdx(fields: { slug: { eq: $slug } }) {
+      id
+      excerpt(pruneLength: 160)
+      body
+      frontmatter {
+        title
+        date(formatString: "MMM Do, YYYY")
+      }
+    }
+  }
+`
+
+const BlogPostTemplate = ({ data, pageContext }) => {
+  const post = data.mdx
+  const { previous, next } = pageContext
+
+  return (
+    <Layout>
+      <SEO
+        title={post.frontmatter.title}
+        description={post.excerpt}
+      />
+      <article>
+        <header className="mb-10 lg:mb-16">
+          <h1>{post.frontmatter.title}</h1>
+        </header>
+        <MDXProvider>
+          <MDXRenderer>{post.body}</MDXRenderer>
+        </MDXProvider>
+      </article>
+
+      <nav>
+        <ul>
+          <li>
+            {previous && (
+              <Link to={previous.fields.slug} rel="prev">
+                ← {previous.frontmatter.title}
+              </Link>
+            )}
+          </li>
+          <li>
+            {next && (
+              <Link to={next.fields.slug} rel="next">
+                {next.frontmatter.title} →
+              </Link>
+            )}
+          </li>
+        </ul>
+      </nav>
+    </Layout>
+  )
+}
+
+export default BlogPostTemplate
+```
+
+## Creating your first article with a custom React component
+
+
+
+
+
+- Follow these setup instructions and make sure they work
