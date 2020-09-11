@@ -1,7 +1,6 @@
 ---
-layout: post
 title: Working on large scale web projects
-tags: Web Apps
+category: Web Apps
 date: "2011-06-08T22:00:00.000Z"
 archived: true
 ---

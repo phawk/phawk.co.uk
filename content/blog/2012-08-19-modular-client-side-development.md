@@ -1,7 +1,6 @@
 ---
-layout: post
 title: Modular client-side development
-tags: JavaScript, Web Apps
+category: JavaScript
 date: "2012-08-19T22:00:00.000Z"
 archived: true
 ---

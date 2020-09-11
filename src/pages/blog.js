@@ -29,6 +29,14 @@ export const pageQuery = graphql`
             date(formatString: "MMMM DD, YYYY")
             title
             description
+            category
+            indexImage {
+              childImageSharp {
+                fluid(maxWidth: 720) {
+                  ...GatsbyImageSharpFluid
+                }
+              }
+            }
           }
         }
       }
@@ -55,7 +63,7 @@ const BlogIndex = ({ data }) => {
         products.
       </p>
 
-      <List posts={posts} className="mt-10" />
+      <List posts={posts} className="my-10" />
       <div>
         <Link className="link" to="/blog/archive/">
           View full archive

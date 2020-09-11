@@ -1,7 +1,6 @@
 ---
-layout: post
 title: 'Bundling bootstrap'
-tags: Ruby, Rails
+category: Rails
 date: "2014-10-03T22:00:00.000Z"
 archived: true
 ---

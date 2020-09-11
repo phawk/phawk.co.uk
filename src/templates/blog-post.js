@@ -1,6 +1,7 @@
 import React from "react"
 import { Link, graphql } from "gatsby"
 import { MDXRenderer } from "gatsby-plugin-mdx"
+import Img from "gatsby-image"
 
 import Layout from "../components/Layouts/Base"
 import SEO from "../components/seo"
@@ -21,8 +22,14 @@ export const pageQuery = graphql`
         title
         date(formatString: "MMM Do, YYYY")
         description
-        img
         caption
+        indexImage {
+          childImageSharp {
+            fluid(maxWidth: 720) {
+              ...GatsbyImageSharpFluid
+            }
+          }
+        }
       }
     }
   }
@@ -56,14 +63,16 @@ const BlogPostTemplate = ({ data, pageContext }) => {
             </span>
           </div>
         </header>
-        {post.frontmatter.img && (
-          <figure>
-            <img
-              src={post.frontmatter.img}
+        {post.frontmatter.indexImage && (
+          <figure className="mb-10">
+            <Img
+              fluid={post.frontmatter.indexImage.childImageSharp.fluid}
               alt={post.frontmatter.caption || post.frontmatter.title}
             />
             {post.frontmatter.caption && (
-              <figcaption>{post.frontmatter.caption}</figcaption>
+              <figcaption className="mt-1 text-gray-600">
+                {post.frontmatter.caption}
+              </figcaption>
             )}
           </figure>
         )}

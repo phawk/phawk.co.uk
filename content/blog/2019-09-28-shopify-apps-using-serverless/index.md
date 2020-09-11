@@ -1,9 +1,8 @@
 ---
-layout: post
 title: Creating a Shopify app using Serverless tech
-tags: ["javascript", "shopify", "serverless"]
+category: JavaScript
 date: "2019-09-28T20:00:00.000Z"
-author: pete
+indexImage: './shopify-serverless.png'
 ---
 
 In our agency Alt Labs, we're currently working on a new Shopify app of our own which has allowed us to try out some cutting-edge technologies.

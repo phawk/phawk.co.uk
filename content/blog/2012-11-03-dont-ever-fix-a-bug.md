@@ -1,7 +1,6 @@
 ---
-layout: post
 title: Don't ever fix a bug
-tags: Development
+category: Development
 date: "2012-11-03T22:00:00.000Z"
 archived: true
 ---

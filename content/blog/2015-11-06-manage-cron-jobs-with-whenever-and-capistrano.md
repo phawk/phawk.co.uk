@@ -1,8 +1,6 @@
 ---
-layout: post
 title: Manage cron jobs with whenever and capistrano
-tags: Rails, Server
-category_id: devops
+category: Rails
 date: "2015-11-06T22:00:00.000Z"
 archived: true
 ---

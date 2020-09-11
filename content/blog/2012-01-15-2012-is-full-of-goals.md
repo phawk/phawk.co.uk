@@ -1,7 +1,6 @@
 ---
-layout: post
 title: 2012 is full of goals
-tags: Misc
+category: Misc
 date: "2012-01-15T22:00:00.000Z"
 archived: true
 ---

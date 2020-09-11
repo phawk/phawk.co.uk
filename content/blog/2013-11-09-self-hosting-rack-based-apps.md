@@ -1,8 +1,6 @@
 ---
-layout: post
 title: 'Self hosting Rack based apps'
-tags: Operations, Ruby
-category_id: devops
+category: Ruby
 date: "2013-11-09T22:00:00.000Z"
 archived: true
 ---

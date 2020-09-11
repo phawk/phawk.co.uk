@@ -1,8 +1,6 @@
 ---
-layout: post
 title: 'Auto renewing SSL certs for free'
-category_id: devops
-tags: Server, SSL
+category: Operations
 date: "2017-02-24T22:00:00.000Z"
 archived: true
 ---

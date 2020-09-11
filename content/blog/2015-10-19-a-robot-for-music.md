@@ -1,7 +1,6 @@
 ---
-layout: post
 title: A robot for music
-tags: node
+category: node
 date: "2015-10-19T22:00:00.000Z"
 archived: true
 ---

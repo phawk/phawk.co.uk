@@ -1,8 +1,6 @@
 ---
-layout: post
 title: Clearance vs. Devise
-tags: Rails
-category_id: clean_code
+category: Rails
 date: "2015-09-04T22:00:00.000Z"
 archived: true
 ---

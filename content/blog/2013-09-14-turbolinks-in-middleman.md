@@ -1,7 +1,6 @@
 ---
-layout: post
 title: 'Turbolinks in middleman'
-tags: Ruby, Middleman
+category: Middleman
 date: "2013-09-14T22:00:00.000Z"
 archived: true
 ---

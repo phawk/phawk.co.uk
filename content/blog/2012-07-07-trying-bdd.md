@@ -1,8 +1,6 @@
 ---
-layout: post
 title: Trying BDD
-tags: Testing
-category_id: testing
+category: Testing
 date: "2012-07-07T22:00:00.000Z"
 archived: true
 ---

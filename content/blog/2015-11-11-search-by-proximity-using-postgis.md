@@ -1,7 +1,6 @@
 ---
-layout: post
 title: Search by proximity using PostGIS and Rails
-tags: Rails, PostGIS
+category: Rails
 date: "2015-11-11T22:00:00.000Z"
 archived: true
 ---

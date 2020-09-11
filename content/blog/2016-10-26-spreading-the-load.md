@@ -1,7 +1,6 @@
 ---
-layout: post
 title: 'Spreading the load'
-tags: Misc
+category: Misc
 draft: true
 date: "2016-10-26T22:00:00.000Z"
 archived: true

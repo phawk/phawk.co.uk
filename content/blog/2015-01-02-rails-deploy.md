@@ -1,8 +1,6 @@
 ---
-layout: post
 title: 'Rails Deploy'
-tags: Ruby, Rails, Operations
-category_id: devops
+category: Rails
 date: "2015-01-02T22:00:00.000Z"
 archived: true
 ---

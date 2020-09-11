@@ -1,8 +1,6 @@
 ---
-layout: post
 title: 'Vanilla Rails'
-tags: Rails, Ruby
-category_id: clean_code
+category: Rails
 date: "2017-10-08T22:00:00.000Z"
 archived: true
 ---

@@ -1,8 +1,6 @@
 ---
-layout: post
 title: 'Tiny testing'
-tags: Ruby, Testing
-category_id: testing
+category: Testing
 date: "2014-09-23T22:00:00.000Z"
 archived: true
 ---

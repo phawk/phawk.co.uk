@@ -1,8 +1,6 @@
 ---
-layout: post
 title: Way Less CSS
-tags: Web Apps
-category_id: clean_code
+category: Web Apps
 date: "2013-02-09T22:00:00.000Z"
 archived: true
 ---

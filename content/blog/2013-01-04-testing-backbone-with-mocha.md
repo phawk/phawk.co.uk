@@ -1,8 +1,6 @@
 ---
-layout: post
 title: Testing Backbone.js with mocha
-tags: JavaScript, Backbone.js, Testing
-category_id: testing
+category: Testing
 date: "2013-01-04T22:00:00.000Z"
 archived: true
 ---

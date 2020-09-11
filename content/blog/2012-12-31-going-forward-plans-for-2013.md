@@ -1,7 +1,6 @@
 ---
-layout: post
 title: Going forward, plans for 2013
-tags: Misc
+category: Misc
 date: "2012-12-31T22:00:00.000Z"
 description: So I have reviewed my progress for 2012, the first thing I have failed at is setting valuable goals. The biggest thing I took away from 2011 was focus, so it made made sense to me to set goals to focus on, however the taking away from 2012 would have to be value.
 archived: true

@@ -1,7 +1,6 @@
 ---
-layout: post
 title: PostgreSQL UUID primary keys in Rails 5
-tags: PostgreSQL, Rails, Ruby
+category: Rails
 date: "2017-02-22T22:00:00.000Z"
 archived: true
 ---

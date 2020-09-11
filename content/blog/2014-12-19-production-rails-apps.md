@@ -1,8 +1,6 @@
 ---
-layout: post
 title: 'Production Rails apps'
-tags: Ruby, Rails
-category_id: devops
+category: Rails
 date: "2014-12-19T22:00:00.000Z"
 archived: true
 ---

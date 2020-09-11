@@ -1,8 +1,6 @@
 ---
-layout: post
 title: 'I’m never using active admin again!'
-tags: Rails, Ruby
-category_id: clean_code
+category: Rails
 published: false
 date: "2017-11-13T22:00:00.000Z"
 archived: true

@@ -1,8 +1,6 @@
 ---
-layout: post
 title: 'API first development'
-tags: Ruby, APIs
-category_id: clean_code
+category: Ruby
 date: "2017-11-20T22:00:00.000Z"
 ---
 

@@ -1,6 +1,6 @@
 ---
 title: My new blog
-tags: blog, react
+category: Gatsby
 date: "2019-08-26T22:00:00.000Z"
 ---
 

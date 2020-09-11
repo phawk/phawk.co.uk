@@ -1,7 +1,6 @@
 ---
-layout: post
 title: Making things
-tags: Web Apps
+category: Web Apps
 date: "2012-09-29T22:00:00.000Z"
 archived: true
 ---

@@ -1,7 +1,6 @@
 ---
-layout: post
 title: What I’ve been up to
-tags: Misc
+category: Misc
 date: "2011-09-22T22:00:00.000Z"
 archived: true
 ---

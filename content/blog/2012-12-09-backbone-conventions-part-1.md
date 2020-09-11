@@ -1,7 +1,6 @@
 ---
-layout: post
 title: Backbone.js conventions (part 1)
-tags: JavaScript, Backbone.js
+category: JavaScript
 date: "2012-12-09T22:00:00.000Z"
 archived: true
 ---

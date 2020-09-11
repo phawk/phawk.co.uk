@@ -1,7 +1,6 @@
 ---
-layout: post
 title: 'Using Vue.js + webpack with Rails 5 today'
-tags: Vue, Rails, JavaScript
+category: Rails
 published: false
 date: "2017-02-05T22:00:00.000Z"
 archived: true

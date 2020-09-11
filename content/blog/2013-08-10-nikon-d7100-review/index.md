@@ -1,9 +1,8 @@
 ---
-layout: post
 title: Nikon d7100 review
-img: /images/photos/under-the-bridge.jpg
+indexImage: './under-the-bridge.jpg'
 caption: River Lagan, Belfast, shot with the d7100
-tags: Photography
+category: Photography
 date: "2013-08-10T22:00:00.000Z"
 archived: true
 ---

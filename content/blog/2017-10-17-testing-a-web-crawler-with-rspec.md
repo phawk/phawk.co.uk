@@ -1,8 +1,7 @@
 ---
-layout: post
 title: 'Real code: Testing a web crawler with RSpec'
 category_id: building_void
-tags: Ruby, Testing
+category: Testing
 date: "2017-10-17T22:00:00.000Z"
 archived: true
 ---

@@ -1,7 +1,6 @@
 ---
-layout: post
 title: How I use Turbolinks
-tags: Ruby, Rails, JavaScript
+category: Rails
 date: "2015-07-14T22:00:00.000Z"
 archived: true
 ---

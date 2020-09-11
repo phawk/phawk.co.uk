@@ -1,6 +1,6 @@
 ---
 title: I’m building a podcast player
-tags: products, react
+category: Product
 date: "2019-08-27T22:00:00.000Z"
 ---
 

@@ -1,8 +1,6 @@
 ---
-layout: post
 title: 'Testing sinatra APIs'
-tags: Testing, Ruby
-category_id: testing
+category: Testing
 date: "2013-10-07T22:00:00.000Z"
 archived: true
 ---

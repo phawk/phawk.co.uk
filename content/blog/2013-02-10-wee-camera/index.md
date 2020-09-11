@@ -1,9 +1,8 @@
 ---
-layout: post
 title: Wee camera
-img: /images/photos/harland-and-wolff.jpg
+indexImage: './harland-and-wolff.jpg'
 caption: Harland and Wolff from my balcony
-tags: Photography
+category: Photography
 date: "2013-02-10T22:00:00.000Z"
 archived: true
 ---

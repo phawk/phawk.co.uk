@@ -1,8 +1,6 @@
 ---
-layout: post
 title: 'Digital ocean cluster from $15/mo'
-tags: Operations
-category_id: devops
+category: Operations
 date: "2014-03-29T22:00:00.000Z"
 archived: true
 ---

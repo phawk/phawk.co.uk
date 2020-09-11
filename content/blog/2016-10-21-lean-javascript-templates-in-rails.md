@@ -1,7 +1,6 @@
 ---
-layout: post
 title: 'Lean JavaScript templates in Rails'
-tags: Rails, JavaScript
+category: Rails
 date: "2016-10-21T22:00:00.000Z"
 archived: true
 ---

@@ -1,8 +1,6 @@
 ---
-layout: post
 title: Automating your tests
-tags: JavaScript, node, Testing
-category_id: testing
+category: Testing
 date: "2013-01-08T22:00:00.000Z"
 archived: true
 ---

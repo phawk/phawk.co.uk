@@ -1,8 +1,6 @@
 ---
-layout: post
 title: Testing node.js apps with mocha
-tags: JavaScript, node, Testing
-category_id: testing
+category: Testing
 date: "2013-01-06T22:00:00.000Z"
 archived: true
 ---

@@ -1,8 +1,6 @@
 ---
-layout: post
 title: Architecture process
-tags: Development, JavaScript
-category_id: clean_code
+category: Development
 date: "2013-01-03T22:00:00.000Z"
 archived: true
 ---

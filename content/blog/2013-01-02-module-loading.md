@@ -1,7 +1,6 @@
 ---
-layout: post
 title: Module loading
-tags: JavaScript
+category: JavaScript
 date: "2013-01-02T22:00:00.000Z"
 archived: true
 ---

@@ -1,8 +1,6 @@
 ---
-layout: post
 title: 'Testing duck types'
-tags: Ruby, Testing
-category_id: testing
+category: Testing
 date: "2015-01-15T22:00:00.000Z"
 archived: true
 ---

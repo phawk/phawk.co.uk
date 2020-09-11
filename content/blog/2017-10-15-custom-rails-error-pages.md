@@ -1,8 +1,6 @@
 ---
-layout: post
 title: 'Custom Rails error pages'
-category_id: building_void
-tags: Rails
+category: Rails
 date: "2017-10-15T22:00:00.000Z"
 archived: true
 ---
