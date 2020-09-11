@@ -2,6 +2,7 @@
 title: My new blog
 category: Gatsby
 date: "2019-08-26T22:00:00.000Z"
+indexImage: './header.png'
 ---
 
 It has been too long since I have written any blog posts on my site. I had a few things to write about and took this opportunity to spruce up the design and migrate to [Gatsby JS](https://www.gatsbyjs.org/).

@@ -2,11 +2,10 @@
 title: I’m building a podcast player
 category: Product
 date: "2019-08-27T22:00:00.000Z"
+indexImage: './player-image.png'
 ---
 
 There are many great podcast players out there for iOS, I have been an avid [Overcast](https://overcast.fm) user for years. So, why have I decided to make my own podcast app? I listen to podcasts from many different places, the car, the kitchen, out on walks with the dog, and while sitting at my desk on my mac. However, there isn't a great podcast experience on mac right now and many people seem to be crying out for one.
-
-![Altcast desktop teaser](./altcast-teaser.png)
 
 Asides from a perceived need, I love to build products and building things for myself is enjoyable, helps me as a developer to polish my skills, and gives me a chance to play with shiny new technologies.
 

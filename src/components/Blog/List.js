@@ -1,6 +1,7 @@
 import React from "react"
 import { Link } from "gatsby"
 import Img from "gatsby-image"
+import noThumbnailImg from "../../images/no-thumbnail.png"
 
 const List = ({ posts, className }) => {
   return (
@@ -25,7 +26,7 @@ const List = ({ posts, className }) => {
                       ) : (
                         <img
                           className="lg:h-48 md:h-36 w-full object-cover object-center"
-                          src="https://dummyimage.com/720x400"
+                          src={noThumbnailImg}
                           alt={title}
                         />
                       )}

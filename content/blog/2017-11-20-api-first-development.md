@@ -2,6 +2,7 @@
 title: 'API first development'
 category: Ruby
 date: "2017-11-20T22:00:00.000Z"
+archived: true
 ---
 
 APIs are core curriculum for any developer these days, whether it be building a JSON API to support interactive pieces of UI through AJAX, a native mobile application or consuming third party APIs. At [Alt Labs](http://alternatelabs.co) we mandate API first development and I’d like to convince you that it’s a good idea.
