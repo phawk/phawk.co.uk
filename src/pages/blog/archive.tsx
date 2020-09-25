@@ -42,7 +42,11 @@ export const pageQuery = graphql`
   }
 `
 
-const BlogArchive = ({ data }) => {
+type Props = {
+  data: any
+}
+
+const BlogArchive: React.FC<Props> = ({ data }) => {
   const posts = data.allMdx.edges
 
   return (

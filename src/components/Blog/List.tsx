@@ -3,7 +3,12 @@ import { Link } from "gatsby"
 import Img from "gatsby-image"
 import noThumbnailImg from "../../images/no-thumbnail.png"
 
-const List = ({ posts, className }) => {
+type Props = {
+  posts: any[]
+  className?: string
+}
+
+const List: React.FC<Props> = ({ posts, className }) => {
   return (
     <div className={className}>
       <section className="text-gray-700 body-font">

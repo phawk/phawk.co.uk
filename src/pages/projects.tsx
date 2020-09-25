@@ -10,7 +10,7 @@ import voidIcon from "../images/void-o.svg"
 import altIcon from "../images/altlabs.svg"
 import ProjectButton from "../components/ProjectButton"
 
-const ProjectsPage = () => (
+const ProjectsPage: React.FC = () => (
   <Layout>
     <SEO title="Projects" />
     <PageTitle>Projects</PageTitle>

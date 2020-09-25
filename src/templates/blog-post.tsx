@@ -35,7 +35,12 @@ export const pageQuery = graphql`
   }
 `
 
-const BlogPostTemplate = ({ data, pageContext }) => {
+type Props = {
+  data: any
+  pageContext: any
+}
+
+const BlogPostTemplate: React.FC<Props> = ({ data, pageContext }) => {
   const post = data.mdx
   const { previous, next } = pageContext
 

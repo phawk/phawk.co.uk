@@ -1,6 +1,11 @@
 import React from "react"
 
-const Logo = ({ className, ...rest }) => {
+type Props = {
+  className?: string
+  title?: string
+}
+
+const Logo: React.FC<Props> = ({ className, ...rest }) => {
   return (
     <svg
       className={className}

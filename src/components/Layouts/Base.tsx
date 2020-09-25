@@ -1,11 +1,10 @@
 import "../../styles/app.css"
 import React from "react"
 import { Link, useStaticQuery, graphql } from "gatsby"
-import PropTypes from "prop-types"
 
 import Logo from "../Logo"
 
-const BaseLayout = ({ children }) => {
+const BaseLayout: React.FC = ({ children }) => {
   const data = useStaticQuery(graphql`
     query SiteMetaQuery {
       site {
@@ -105,10 +104,6 @@ const BaseLayout = ({ children }) => {
       </div>
     </>
   )
-}
-
-BaseLayout.propTypes = {
-  children: PropTypes.node.isRequired,
 }
 
 export default BaseLayout

@@ -44,7 +44,11 @@ export const pageQuery = graphql`
   }
 `
 
-const BlogIndex = ({ data }) => {
+type Props = {
+  data: any
+}
+
+const BlogIndex: React.FC<Props> = ({ data }) => {
   const posts = data.allMdx.edges
 
   return (

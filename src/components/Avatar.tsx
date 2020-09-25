@@ -2,7 +2,11 @@ import React from "react"
 import { useStaticQuery, graphql } from "gatsby"
 import Img from "gatsby-image"
 
-const Avatar = ({ className }) => {
+type Props = {
+  className?: string
+}
+
+const Avatar: React.FC<Props> = ({ className }) => {
   const data = useStaticQuery(graphql`
     query AvatarQuery {
       avatar: file(absolutePath: { regex: "/ignite-1600.jpg/" }) {

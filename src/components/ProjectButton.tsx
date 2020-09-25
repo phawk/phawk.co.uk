@@ -1,6 +1,13 @@
 import React from "react"
 
-const ProjectButton = ({ url, icon, title, description }) => {
+type Props = {
+  url: string
+  icon: string
+  title: string
+  description: string
+}
+
+const ProjectButton: React.FC<Props> = ({ url, icon, title, description }) => {
   return (
     <a
       href={url}

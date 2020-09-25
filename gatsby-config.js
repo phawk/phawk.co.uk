@@ -108,5 +108,6 @@ module.exports = {
         trackingId: `UA-8135554-1`,
       },
     },
+    `gatsby-plugin-typescript`,
   ],
 }

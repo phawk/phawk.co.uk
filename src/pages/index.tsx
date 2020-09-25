@@ -6,7 +6,7 @@ import SEO from "../components/seo"
 import Avatar from "../components/Avatar"
 import PageTitle from "../components/PageTitle"
 
-const IndexPage = () => (
+const IndexPage: React.FC = () => (
   <Layout>
     <SEO title="Learn to build blazing fast sites with Gatsby.js" />
     <div className="py-12 lg:py-16">

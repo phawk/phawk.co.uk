@@ -9,7 +9,7 @@ import Layout from "../components/Layouts/Base"
 import SEO from "../components/seo"
 import PageTitle from "../components/PageTitle"
 
-const AboutPage = () => (
+const AboutPage: React.FC = () => (
   <Layout>
     <SEO title="About" />
     <PageTitle>A little history&hellip;</PageTitle>
