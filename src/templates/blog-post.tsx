@@ -9,6 +9,7 @@ import PageTitle from "../components/PageTitle"
 import Avatar from "../components/Avatar"
 import Contents from "../components/Blog/Contents"
 import { MDXProvider } from "@mdx-js/react"
+import { BlogPost } from "../utils/types"
 
 const shortcodes = { Contents }
 
@@ -36,8 +37,14 @@ export const pageQuery = graphql`
 `
 
 type Props = {
-  data: any
-  pageContext: any
+  data: {
+    mdx: BlogPost
+  }
+  pageContext: {
+    slug: string
+    previous: BlogPost
+    next: BlogPost
+  }
 }
 
 const BlogPostTemplate: React.FC<Props> = ({ data, pageContext }) => {
@@ -82,9 +89,11 @@ const BlogPostTemplate: React.FC<Props> = ({ data, pageContext }) => {
           </figure>
         )}
         <section className="styled-text">
-          <MDXProvider components={shortcodes}>
-            <MDXRenderer>{post.body}</MDXRenderer>
-          </MDXProvider>
+          {post.body && (
+            <MDXProvider components={shortcodes}>
+              <MDXRenderer>{post.body}</MDXRenderer>
+            </MDXProvider>
+          )}
         </section>
       </article>
 

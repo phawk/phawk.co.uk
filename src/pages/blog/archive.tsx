@@ -5,6 +5,7 @@ import Layout from "../../components/Layouts/Base"
 import SEO from "../../components/seo"
 import List from "../../components/Blog/List"
 import PageTitle from "../../components/PageTitle"
+import { BlogPostData } from "../../utils/types"
 
 export const pageQuery = graphql`
   query blogListArchiveQuery {
@@ -43,7 +44,11 @@ export const pageQuery = graphql`
 `
 
 type Props = {
-  data: any
+  data: {
+    allMdx: {
+      edges: BlogPostData[]
+    }
+  }
 }
 
 const BlogArchive: React.FC<Props> = ({ data }) => {

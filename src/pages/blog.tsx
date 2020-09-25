@@ -7,6 +7,7 @@ import List from "../components/Blog/List"
 import PageTitle from "../components/PageTitle"
 import gatsbyLogo from "../images/gatsby.svg"
 import reactLogo from "../images/react.svg"
+import { BlogPostData } from "../utils/types"
 
 export const pageQuery = graphql`
   query blogIndexListQuery {
@@ -45,7 +46,11 @@ export const pageQuery = graphql`
 `
 
 type Props = {
-  data: any
+  data: {
+    allMdx: {
+      edges: BlogPostData[]
+    }
+  }
 }
 
 const BlogIndex: React.FC<Props> = ({ data }) => {

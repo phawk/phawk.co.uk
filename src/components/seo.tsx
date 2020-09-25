@@ -16,7 +16,7 @@ type MetaTag =
 type Props = {
   title: string
   lang?: string
-  meta?: MetaTag[] // Record<string, any>[]
+  meta?: MetaTag[]
   description?: string
 }
 

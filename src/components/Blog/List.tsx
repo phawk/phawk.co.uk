@@ -2,9 +2,10 @@ import React from "react"
 import { Link } from "gatsby"
 import Img from "gatsby-image"
 import noThumbnailImg from "../../images/no-thumbnail.png"
+import { BlogPostData } from "../../utils/types"
 
 type Props = {
-  posts: any[]
+  posts: BlogPostData[]
   className?: string
 }
 
